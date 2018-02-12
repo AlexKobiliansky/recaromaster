@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
     $(".toggle-mnu").click(function() {
         $(this).toggleClass("on");
@@ -7,7 +7,7 @@ $(function() {
     });
 
     $(".service-title").equalHeights();
-    $(".popup-gallery>img").equalHeights();
+    $(".gallery-item").matchHeight();
 
 
     $(".popup-gallery").each(function(e){
@@ -43,5 +43,31 @@ $(function() {
             }
         }
     });
+
+    $('.owl-compare').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: ["",""],
+        animateOut: 'fadeOut',
+        mouseDrag: false,
+        thumbs: true,
+    });
+
+
+    $('.compare-item').imagesCompare({
+        initVisibleRatio: 0.6,
+        addSeparator: true,
+        addDragHandle: true,
+        animationDuration: 450,
+        animationEasing: "linear",
+        precision: 2
+    });
+
+
+
+
+
 
 });

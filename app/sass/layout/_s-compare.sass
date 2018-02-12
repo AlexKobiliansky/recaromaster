@@ -1,0 +1,70 @@
+.s-compare
+  .section-title
+    text-align: left
+    position: absolute
+    left: -100px
+    &:after
+      left: 60%
+  .section-content
+    margin-top: 120px
+    font-size: 18px
+    line-height: 1.4
+  .compare-desc
+    margin-top: 80px
+    line-height: 1.65
+    text-align: center
+    padding: 0 30px
+    position: relative
+    &:before
+      content: ''
+      height: 7px
+      width: 190px
+      position: absolute
+      background-color: $accent-color
+      top: -20px
+      left: 30px
+    &:after
+      content: ''
+      height: 7px
+      width: 190px
+      position: absolute
+      background-color: $accent-color
+      bottom: -40px
+      right: 30px
+
+.owl-compare
+  width: 100%
+  padding-right: 25%
+  position: relative
+  .owl-thumbs
+    display: inline-block
+    position: absolute
+    bottom: 0
+    right: -18%
+    .owl-thumb-item
+      margin-top: 10px
+      display: block
+      width: 50%
+      opacity: .4
+      padding: 0
+      border: none
+      .images-compare-handle
+        display: none
+      .images-compare-separator
+        display: none
+      img
+        max-width: 100%
+
+
+.images-compare-separator
+  width: 5px
+
+.images-compare-handle
+  width: 25px
+  height: 25px
+  border-width: 6px
+  background-color: $accent-color
+  margin-left: -10px
+  z-index: 1000
+  span
+    display: none

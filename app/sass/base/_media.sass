@@ -5,6 +5,14 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 
+
+  .owl-compare
+    padding-right: 30%
+    .owl-thumbs
+      right: -23%
+      .owl-thumb-item
+        width: 50%
+
   .owl-comments
     .owl-nav
       bottom: 250px
@@ -52,6 +60,28 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+
+  .s-compare
+    padding-bottom: 90px
+    .section-title
+      left: 0
+      font-size: 30px
+    .section-content
+      margin-top: 90px
+    .compare-desc
+      margin-top: 60px
+      padding: 0
+      &:before
+        left: 0
+      &:after
+        right: 0
+
+  .owl-compare
+    .owl-thumbs
+      right: -52%
+      .owl-thumb-item
+        width: 30%
+
 
   .owl-comments
     .owl-nav
@@ -102,6 +132,24 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+
+  .s-compare
+    .section-title
+      position: relative
+      text-align: center
+    .section-content
+      margin-top: 60px
+
+  .owl-compare
+    margin-top: 80px
+    padding: 0
+    .owl-thumbs
+      position: relative
+      width: 100%
+      right: 0
+      .owl-thumb-item
+        display: inline-block
+        margin-right: 15px
   .logo
     width: 35%
   .popup-gallery
@@ -123,10 +171,13 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
+  .s-compare
+    padding-bottom: 40px
+
   .section-title
     line-height: 1.3
 
-  .s-comments
+  .s-comments, .s-compare
     .section-title
       &:after
         left: 20%
