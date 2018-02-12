@@ -67,8 +67,8 @@ a, a:hover, a:focus, a:active
   text-decoration: none
   +mt(.3s)
 
-input
-  outline: none
+input, a
+  outline: none!important
 
 .btn
   background-color: $accent-color
@@ -79,3 +79,17 @@ input
 
 section
   padding: 40px 0
+
+.section-title
+  font-size: 36px
+  text-transform: uppercase
+  font-family: "robotoRegular", sans-serif
+  text-align: center
+  position: relative
+  &:after
+    content: ''
+    width: 200px
+    height: 9px
+    background-color: $accent-color
+    position: absolute
+    bottom: -30px

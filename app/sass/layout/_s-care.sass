@@ -1,0 +1,141 @@
+.s-care
+  position: relative
+  .section-title
+    &:after
+      left: 59%
+  .content
+    display: block
+    font-size: 18px
+    position: relative
+    left: 400px
+    top: 15px
+    color: #606060
+    p
+      display: inline-block
+  .bg1
+    position: absolute
+    opacity: .3
+    left: 0
+    top: 0
+    img
+      max-width: 300px
+  .bg2
+    position: absolute
+    opacity: .3
+    right: 0
+    bottom: 10%
+    img
+      max-width: 300px
+
+.service-wrapper
+  margin-top: 60px
+
+
+.service-item
+  margin-bottom: 30px
+
+.service-content
+  padding: 10px 10px 10px 0
+  position: relative
+  .service-title
+    display: flex
+    justify-content: center
+    align-items: center
+    vertical-align: middle
+    line-height: 1.3
+    text-align: center
+    text-transform: uppercase
+    font-size: 20px
+    color: #606060
+    font-family: "robotoRegular", sans-serif
+    position: relative
+    &:after
+      content: ''
+      background-color: $accent-color
+      height: 9px
+      width: 80%
+      position: absolute
+      left: 10%
+      bottom: -20px
+  .service-value
+    font-size: 26px
+    color: #000
+    font-family: "robotoMedium", sans-serif
+    text-align: center
+    margin-top: 50px
+    text-transform: uppercase
+
+
+.gallery
+  .section-title
+    &:after
+      left: 52%
+
+.gallery-wrapper
+  margin-top: 100px
+
+.window-sert
+  img
+    display: block
+    margin: 0 auto
+    width: 40%
+
+
+.mfp-close-btn-in .mfp-close
+  color: #fff
+
+.popup-gallery
+  display: block
+  position: relative
+  +mt(.3s)
+  margin-bottom: 30px
+  img
+    +mt(.5s)
+  &-content
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(255, 255, 255, .4)
+    display: flex
+    opacity: 0
+    justify-content: center
+    align-items: center
+    +mt(.5s)
+    transform: scale(1)
+    i
+      font-size: 30px
+      color: #606060
+  &:hover
+    .popup-gallery-content
+      opacity: 1
+      +mt(.5s)
+      transform: scale(.95)
+    img
+      transform: scale(1.05)
+
+//my-mfp-zoom-sert
+.my-mfp-zoom-sert
+  .zoom-anim-dialog, .window-sert img
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .window-sert img
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .window-sert img
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .7
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+*
+  transition: filter .25s ease
+.mfp-wrap ~ *
+  filter: blur(5px)
