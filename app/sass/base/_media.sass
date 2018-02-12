@@ -4,23 +4,113 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+  .main-mnu
+    font-size: 13px
+  .phones
+    font-size: 16px
+  .top-line
+    height: 160px
+  .logo
+    width: 20%
+    left: calc(50% - 85px)
+    top: 40px
+    .soc-item
+      margin: 0 12px
+  .welcome-title
+    font-size: 63px
+  .header-form
+    label
+      width: 280px
+      margin: 0 15px
+    input[type="text"]
+      padding-bottom: 25px
+      padding-top: 25px
+    .btn
+      width: 280px
+      padding-bottom: 25px
+      padding-top: 25px
+      margin: 0 15px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .top-line
+    height: 82px
+  .logo
+    width: 24%
+    top: 85px
+  .s-welcome
+    padding-top: 250px
+  .welcome-title
+    font-size: 50px
+    &:after
+      width: 250px
+      height: 10px
+    .from
+      left: 270px
+  .img-name
+    margin-top: 50px
+  .slogan
+    margin-top: 65px
+    font-size: 32px
+  .header-form
+    label
+      text-align: center
+      display: block
+      width: 300px
+      margin: 0 auto 20px
+    .btn
+      width: 300px
+      margin: 0 10px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .logo
+    width: 35%
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+  .phones
+    background: none
+    font-size: 15px
+    padding: 0
+    position: relative
+    top: -5px
+    a
+      display: block
+      margin-bottom: 15px
+    a+a
+      margin: 0
+  .logo
+    width: 200px
+    left: calc(50% - 100px)
+  .welcome-title
+    font-size: 30px
+    line-height: 1.2
+    &:after
+      width: 120px
+      height: 6px
+      left: 93px
+      bottom: -12px
+    .from
+      display: none
+  .s-welcome
+    padding-top: 275px
+  .slogan
+    font-size: 20px
+  .header-form
+    label
+      width: 100%
+      input[type="text"]
+        font-size: 16px
+        padding-top: 20px
+        padding-bottom: 20px
+    .btn
+      width: 100%
+      margin: 0
+      padding-top: 20px
+      padding-bottom: 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

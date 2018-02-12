@@ -1,0 +1,267 @@
+.main-head
+  background: url("../img/bg-welcome.jpg") no-repeat center center
+  background-size: cover
+  position: relative
+  color: #fff
+  font-family: "robotoMedium", sans-serif
+  .container
+    position: relative
+    z-index: 1
+  .overlay
+    background-color: black
+    opacity: .7
+
+.top-line
+  position: relative
+  height: 190px
+  .container
+    position: relative
+    height: 100%
+    padding-top: 25px
+  .overlay
+    opacity: .7
+
+.phones
+  padding: 10px 0
+  padding-left: 28px
+  position: relative
+  float: right
+  right: 0
+  font-size: 18px
+  background: url("../img/icons/phone-left.png") no-repeat left center
+  background-size: 20px
+  a:hover
+    color: $accent-color
+  a+a
+    display: inline-block
+    margin-left: 15px
+
+
+.main-mnu
+  position: absolute
+  bottom: 28px
+  display: flex
+  width: 100%
+  ul
+    width: 100%
+    li
+      display: inline-block
+      &:hover
+        color: $accent-color
+    li+li
+      margin-left: 3%
+    li:nth-child(6)
+      margin-left: 20%
+    li:nth-child(7)
+      margin-left: 4%
+    li:nth-child(8)
+      margin-left: 4.6%
+
+.logo
+  position: absolute
+  width: 22%
+  left: 39%
+  top: 24px
+  i
+    position: relative
+    z-index: 5
+  .soc-item
+    display: inline-block
+    margin: 0 15px
+    a
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        background-color: #626262
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        top: calc(50% - 18px)
+        left: calc(50% - 18px)
+        z-index: 1
+        border: 1px solid transparent
+        +mt(.3s)
+      &:hover
+        &:after
+          background-color: #808080
+          border-color: #fff
+
+.fa-telegram-plane
+  font-size: 20px
+  left: -1px
+  top: 2px
+.fa-vk
+  left: -1px
+.fa-instagram
+  font-size: 22px
+  top: 3px
+
+.soc-wrap
+  margin-top: 25px
+  text-align: center
+
+
+.s-welcome
+  padding: 170px 0
+  text-align: center
+  position: relative
+
+.welcome-title
+  font-size: 68px
+  font-family: "robotoRegular", sans-serif
+  text-transform: uppercase
+  position: relative
+  margin: 0 auto
+  display: inline-block
+  p
+    display: inline-block
+  span
+    font-family: "robotoBold", sans-serif
+  &:after
+    content: ''
+    width: 300px
+    height: 14px
+    background-color: $accent-color
+    position: absolute
+    left: 0
+    bottom: -21px
+  .from
+    font-size: 30px
+    position: absolute
+    left: 320px
+    text-transform: none
+    font-family: "robotoBold", sans-serif
+    bottom: -25px
+
+.img-name
+  margin-top: 40px
+
+.slogan
+  margin-top: 100px
+  line-height: 1.5
+  font-size: 38px
+  font-family: "robotoRegular", sans-serif
+
+.header-form
+  margin-top: 75px
+  label
+    display: inline-block
+    width: 330px
+    margin: 0 27px
+  input[type="text"]
+    width: 100%
+    font-size: 18px
+    font-family: "robotoRegular", sans-serif
+    padding: 30px
+    border: 2px solid #fff
+    border-radius: 60px
+    background: transparent
+    &::placeholder
+      color: #fff
+  .btn
+    width: 330px
+    margin: 0 27px
+    padding: 30px 0
+    font-size: 23px
+    font-family: "robotoRegular", sans-serif
+    &:hover
+      background-color: darken($accent-color, 5%)
+
+.next-section
+  display: block
+  position: absolute
+  font-size: 60px
+  color: $accent-color
+  left: calc(50% - 15px)
+  bottom: 25px
+  +mt(.5s)
+  a
+    position: relative
+  &:hover, &:active, &:focus
+    color: darken($accent-color, 5%)
+
+.next-wrap
+  position: absolute
+  bottom: 0
+  left: calc(50% - 15px)
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    border: 5px solid $accent-color
+    left: -31px
+    top: -94px
+    +mt(.5s)
+  &:hover
+    &:before
+      border-color: darken($accent-color, 5%)
+    .next-section
+      bottom: 20px
+      color: darken($accent-color, 5%)
+
+.img-name
+  img
+    margin: 0 auto
+
+.mobile-mnu
+  padding: 20px 0
+  background-color: rgba(18,17,13,.98 )
+  position: relative
+  z-index: 10
+  text-transform: uppercase
+  letter-spacing: 0.06em
+  display: none
+  li
+    padding: 15px 0
+    text-align: center
+    position: relative
+    z-index: 10
+    &:hover
+      color: $accent-color
+      letter-spacing: 0.15em
+
+
+
+//toggle
+.toggle-mnu
+  display: inline-block
+  width: 28px
+  height: 28px
+  margin-top: 6px
+
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+
+  span:after
+    top: 18px
+
+  span
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #fff
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+
+
+  &.on span
+    background-color: transparent
+
+  &.on span:before
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after
+    transform: rotate(-45deg) translate(6px, -7px)
+
+//end toggle
