@@ -1,0 +1,36 @@
+.s-comments
+  background: url(../img/bg-comments.jpg) no-repeat center center
+  background-size: cover
+  position: relative
+  .container
+    position: relative
+    z-index: 1
+  .overlay
+    background-color: black
+    opacity: .7
+  .section-title
+    color: #fff
+    &:after
+      left: 48%
+
+.owl-comments
+  margin-top: 70px
+  position: relative
+  .owl-nav
+    position: relative
+    bottom: 300px
+  .owl-prev, .owl-next
+    position: absolute
+    width: 50px
+    height: 110px
+    background-size: 15px 30px
+    +mt(.3s)
+    z-index: 3
+    &:hover
+      background-color: rgba(0,0,0,.8)
+  .owl-prev
+    left: -5%
+    background: rgba(0,0,0,.6) url("../img/icons/comment-prev.png") no-repeat 15px center
+  .owl-next
+    right: -5%
+    background: rgba(0,0,0,.4) url("../img/icons/comment-next.png") no-repeat 15px center

@@ -24,7 +24,24 @@ $(function() {
         gallery: {
             enabled: true
         },
+    });
 
+    $('.owl-comments').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: ["",""],
+        responsive:{
+            0:{
+                items:1,
+            },
+            769:{
+              items:2,
+            },
+            992:{
+                items:3,
+            }
+        }
     });
 
 });
