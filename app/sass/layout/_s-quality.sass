@@ -1,0 +1,44 @@
+.s-quality
+  background: url("../img/bg-quality.jpg") no-repeat center center
+  background-size: cover
+  position: relative
+  padding-bottom: 60px
+  .overlay
+    background-color: black
+    opacity: .7
+  .container
+    color: #fff
+    position: relative
+    z-index: 1
+  .section-title
+    &:after
+      left: 48%
+
+.quality-wrapper
+  margin-top: 60px
+
+.quality-item
+  text-align: center
+  &-img
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 275px
+    &:after
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      content: ''
+      position: absolute
+      background: url("../img/bg-quality-item.png") no-repeat center center
+      background-size: contain
+      opacity: .2
+    img
+      max-width: 160px
+  &-desc
+    margin-top: 15px
+    font-size: 18px
+    text-transform: uppercase
+    line-height: 1.2

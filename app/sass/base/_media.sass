@@ -61,6 +61,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 
+  .quality-item-desc
+    font-size: 15px
+    margin-top: -10px
+
   .s-compare
     padding-bottom: 90px
     .section-title
@@ -133,6 +137,13 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
+  .quality-item
+    margin-bottom: 30px
+
+  .quality-item-desc
+    font-size: 18px
+    margin-top: 5px
+
   .how-item
     margin-bottom: 30px
 
@@ -179,11 +190,14 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
-  .s-comments, .s-compare, .s-how
+  .s-comments, .s-compare, .s-how, .s-quality
     .section-title
       &:after
         left: 20%
         width: 60%
+
+  .quality-item-desc
+    font-size: 15px
 
   .s-how
     .section-desc
