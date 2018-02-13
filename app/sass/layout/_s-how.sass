@@ -1,0 +1,44 @@
+.s-how
+  .section-desc
+    font-size: 30px
+    font-family: "robotoRegular", sans-serif
+    color: $accent-color
+    line-height: 1.2
+    text-align: center
+    margin-top: 60px
+  .section-title
+    &:after
+      left: 52%
+
+.how-wrapper
+  margin-top: 35px
+
+.how-item
+  text-align: center
+  &-img
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 275px
+    &:after
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      content: ''
+      position: absolute
+      background: url("../img/bg-how-item.png") no-repeat center center
+      background-size: contain
+      opacity: .4
+    img
+      max-width: 160px
+  &-title
+    margin-top: 15px
+    text-transform: uppercase
+    font-size: 18px
+    font-family: "robotoRegular", sans-serif
+  &-desc
+    margin-top: 25px
+    font-size: 30px
+    color: $accent-color

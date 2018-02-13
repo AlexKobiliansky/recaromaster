@@ -133,6 +133,14 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
+  .how-item
+    margin-bottom: 30px
+
+  .how-item-desc
+    margin-top: 10px
+  .how-item-title
+    margin-top: 5px
+
   .s-compare
     .section-title
       position: relative
@@ -171,17 +179,22 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
+  .s-comments, .s-compare, .s-how
+    .section-title
+      &:after
+        left: 20%
+        width: 60%
+
+  .s-how
+    .section-desc
+      font-size: 24px
+      line-height: 1.2
+
   .s-compare
     padding-bottom: 40px
 
   .section-title
     line-height: 1.3
-
-  .s-comments, .s-compare
-    .section-title
-      &:after
-        left: 20%
-        width: 60%
 
   .s-comments
     padding-bottom: 100px
