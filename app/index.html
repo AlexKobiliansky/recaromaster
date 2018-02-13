@@ -107,6 +107,14 @@
 			</div>
 
 			<form class="contact-form header-form">
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Recaro Master">
+				<input type="hidden" name="admin_email" value="alex_kobilianskiy@bigmir.net">
+				<input type="hidden" name="form_subject" value="Заявка с сайта Recaro Master">
+				<!-- END Hidden Required Fields -->
+
+
 				<label for="name">
 					<input type="text" id="name" name="Имя" placeholder="Ваше имя" autocomplete="off">
 				</label>
@@ -606,6 +614,15 @@
 				<p>Получите бесплатную консультацию обувщика, заполнив форму ниже:</p>
 
 				<form class="contact-form footer-form">
+
+
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Recaro Master">
+					<input type="hidden" name="admin_email" value="alex_kobilianskiy@bigmir.net">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Recaro Master">
+					<!-- END Hidden Required Fields -->
+
+
 					<label for="name">
 						<input type="text" id="name" name="Имя" placeholder="Ваше имя" autocomplete="off">
 					</label>
@@ -640,7 +657,11 @@
 
 <div id="toTop"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
 
-
+<div class="hidden">
+	<div id="send-request">
+		<p>Заявка отправлена!</p>
+	</div>
+</div>
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

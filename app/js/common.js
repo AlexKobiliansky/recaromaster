@@ -90,5 +90,60 @@ $(document).ready(function() {
 
 
 
+    //E-mail Ajax Send
+    $("form").submit(function() { //Change
+        var th = $(this);
+        th.find('.btn').prop('disabled','disabled');
+
+        $.ajax({
+            type: "POST",
+            url: "http://alexko.zzz.com.ua/recaromaster/mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+
+            setTimeout(function(){
+                $.magnificPopup.open({
+                    items: {
+                        src: '#send-request'
+                    },
+                    type: 'inline',
+
+                    fixedContentPos: false,
+                    fixedBgPos: true,
+
+                    overflowY: 'auto',
+
+                    closeBtnInside: true,
+                    preloader: false,
+
+                    midClick: true,
+                    removalDelay: 300,
+                    mainClass: 'my-mfp-zoom-request'
+                }, 0);
+            }, 100);
+
+            setTimeout(function() {
+                // Done Functions
+                th.find(".btn").removeAttr('disabled');
+                th.trigger("reset");
+                $.magnificPopup.close();
+            }, 3000);
+        });
+        return false;
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });

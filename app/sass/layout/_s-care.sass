@@ -121,27 +121,3 @@
     img
       transform: scale(1.05)
 
-//my-mfp-zoom-sert
-.my-mfp-zoom-sert
-  .zoom-anim-dialog, .window-sert img
-    opacity: 0
-    transition: all 0.5s ease-in-out
-    transform: scale(0.7)
-  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .window-sert img
-    opacity: 1
-    transform: scale(1)
-  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .window-sert img
-    transform: scale(0.7)
-    opacity: 0
-  &.mfp-bg
-    opacity: 0
-    transition: opacity 0.5s ease-out
-  &.mfp-ready.mfp-bg
-    opacity: .7
-  &.mfp-removing.mfp-bg
-    opacity: 0
-
-*
-  transition: filter .25s ease
-.mfp-wrap ~ *
-  filter: blur(5px)
