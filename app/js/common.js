@@ -65,6 +65,27 @@ $(document).ready(function() {
         precision: 2
     });
 
+    $(".scroll-to-id").mPageScroll2id();
+
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1000) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},600);
+    });
+
+
+    $(".user-phone").mask("+7 (999) 999-99-99",{autoclear: false});
+
+
+    $.validate({
+        form : '.contact-form',
+    });
 
 
 

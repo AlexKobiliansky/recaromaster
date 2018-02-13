@@ -48,14 +48,14 @@
 			</div>
 			<nav class="main-mnu hidden-sm hidden-xs">
 				<ul>
-					<li><a href="#0">Главная</a></li>
-					<li><a href="#0">Услуги</a></li>
-					<li><a href="#0">Фотогалерея</a></li>
-					<li><a href="#0">Отзывы</a></li>
-					<li><a href="#0">Сроки</a></li>
-					<li><a href="#0">Примеры</a></li>
-					<li><a href="#0">Мастерская</a></li>
-					<li><a href="#0">Постоянным клиентам</a></li>
+					<li><a href="/" class="scroll-to-id">Главная</a></li>
+					<li><a href="#services" class="scroll-to-id">Услуги</a></li>
+					<li><a href="#gallery" class="scroll-to-id">Фотогалерея</a></li>
+					<li><a href="#comments" class="scroll-to-id">Отзывы</a></li>
+					<li><a href="#how" class="scroll-to-id">Сроки</a></li>
+					<li><a href="#compare" class="scroll-to-id">Примеры</a></li>
+					<li><a href="#quality" class="scroll-to-id">Мастерская</a></li>
+					<li><a href="#customers" class="scroll-to-id">Постоянным клиентам</a></li>
 				</ul>
 			</nav>
 
@@ -65,30 +65,30 @@
 				</a>
 				<div class="soc-wrap">
 					<div class="soc-item">
-						<a href="#0"><i class="fab fa-vk"></i></a>
+						<a href="#0" target="_blank"><i class="fab fa-vk"></i></a>
 					</div>
 					<div class="soc-item">
-						<a href="#0"><i class="fa fa-facebook"></i></a>
+						<a href="#0" target="_blank"><i class="fa fa-facebook"></i></a>
 					</div>
 					<div class="soc-item">
-						<a href="#0"><i class="fab fa-telegram-plane"></i></a>
+						<a href="#0" target="_blank"><i class="fab fa-telegram-plane"></i></a>
 					</div>
 					<div class="soc-item">
-						<a href="#0"><i class="fab fa-instagram"></i></a>
+						<a href="#0" target="_blank"><i class="fab fa-instagram"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<nav class="mobile-mnu hidden-md hidden-lg">
 			<ul>
-				<li><a href="#0">Главная</a></li>
-				<li><a href="#0">Услуги</a></li>
-				<li><a href="#0">Фотогалерея</a></li>
-				<li><a href="#0">Отзывы</a></li>
-				<li><a href="#0">Сроки</a></li>
-				<li><a href="#0">Примеры</a></li>
-				<li><a href="#0">Мастерская</a></li>
-				<li><a href="#0">Постоянным клиентам</a></li>
+				<li><a href="/" class="scroll-to-id">Главная</a></li>
+				<li><a href="#services" class="scroll-to-id">Услуги</a></li>
+				<li><a href="#gallery" class="scroll-to-id">Фотогалерея</a></li>
+				<li><a href="#comments" class="scroll-to-id">Отзывы</a></li>
+				<li><a href="#how" class="scroll-to-id">Сроки</a></li>
+				<li><a href="#compare" class="scroll-to-id">Примеры</a></li>
+				<li><a href="#quality" class="scroll-to-id">Мастерская</a></li>
+				<li><a href="#customers" class="scroll-to-id">Постоянным клиентам</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -112,19 +112,20 @@
 				</label>
 
 				<label for="phone">
-					<input type="text" id="phone" name="Телефон" placeholder="Ваш Телефон" autocomplete="off">
+					<input type="text" id="phone" name="Телефон" placeholder="Ваш телефон" autocomplete="off" class="user-phone" data-validation="custom" data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" data-validation-error-msg="* Укажите ваш телефон">
+					<span id="phone-error-dialog"></span>
 				</label>
 
 				<button type="submit" class="btn">Заказать ремонт</button>
 			</form>
 		</div>
 		<div class="next-wrap">
-			<a href="#0" class="next-section"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+			<a href="#services" class="next-section scroll-to-id"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
 		</div>
 	</section>
 </header>
 
-<section class="s-care">
+<section class="s-care" id="services">
 	<div class="bg1"><img src="img/bg-care1.png" alt="alt"></div>
 	<div class="bg2"><img src="img/bg-care2.png" alt="alt"></div>
 	<div class="container">
@@ -304,82 +305,89 @@
 
 		</div>
 
-		<div class="gallery">
-			<div class="section-title">
-				Фотогалерея
-			</div>
-			<div class="gallery-wrapper">
-				<div class="col-md-3 col-sm-4">
-					<div class="gallery-item">
-						<a href="#" class="popup-gallery">
-							<img src="img/gallery-img1.jpg" alt="alt" class="img-responsive">
-							<span class="popup-gallery-content">
+	</div>
+
+		<div class="container">
+			<div class="gallery" id="gallery">
+				<div class="section-title">
+					Фотогалерея
+				</div>
+				<div class="gallery-wrapper">
+					<div class="col-md-3 col-sm-4">
+						<div class="gallery-item">
+							<a href="#" class="popup-gallery">
+								<img src="img/gallery-img1.jpg" alt="alt" class="img-responsive">
+								<span class="popup-gallery-content">
 							<i class="fa fa-search-plus"></i>
 						</span>
-							<span class="hidden">
+								<span class="hidden">
 							<span class="window-sert">
 								<img src="img/gallery-img1.jpg" alt="alt">
 							</span>
 						</span>
-						</a>
+							</a>
+						</div>
 					</div>
-				</div>
 
-				<div class="col-md-3 col-sm-4">
-					<div class="gallery-item">
-						<a href="#" class="popup-gallery">
-							<img src="img/gallery-img2.jpg" alt="alt" class="img-responsive">
-							<span class="popup-gallery-content">
+					<div class="col-md-3 col-sm-4">
+						<div class="gallery-item">
+							<a href="#" class="popup-gallery">
+								<img src="img/gallery-img2.jpg" alt="alt" class="img-responsive">
+								<span class="popup-gallery-content">
 							<i class="fa fa-search-plus"></i>
 						</span>
-							<span class="hidden">
+								<span class="hidden">
 							<span class="window-sert">
 								<img src="img/gallery-img2.jpg" alt="alt">
 							</span>
 						</span>
-						</a>
+							</a>
+						</div>
 					</div>
-				</div>
 
-				<div class="col-md-3 col-sm-4">
-					<div class="gallery-item">
-						<a href="#" class="popup-gallery">
-							<img src="img/gallery-img3.jpg" alt="alt" class="img-responsive">
-							<span class="popup-gallery-content">
+					<div class="col-md-3 col-sm-4">
+						<div class="gallery-item">
+							<a href="#" class="popup-gallery">
+								<img src="img/gallery-img3.jpg" alt="alt" class="img-responsive">
+								<span class="popup-gallery-content">
 							<i class="fa fa-search-plus"></i>
 						</span>
-							<span class="hidden">
+								<span class="hidden">
 							<span class="window-sert">
 								<img src="img/gallery-img3.jpg" alt="alt">
 							</span>
 						</span>
-						</a>
+							</a>
+						</div>
 					</div>
-				</div>
 
-				<div class="col-md-3 col-sm-4">
-					<div class="gallery-item">
-						<a href="#" class="popup-gallery">
-							<img src="img/gallery-img4.jpg" alt="alt" class="img-responsive">
-							<span class="popup-gallery-content">
+					<div class="col-md-3 col-sm-4">
+						<div class="gallery-item">
+							<a href="#" class="popup-gallery">
+								<img src="img/gallery-img4.jpg" alt="alt" class="img-responsive">
+								<span class="popup-gallery-content">
 							<i class="fa fa-search-plus"></i>
 						</span>
-							<span class="hidden">
+								<span class="hidden">
 							<span class="window-sert">
 								<img src="img/gallery-img4.jpg" alt="alt">
 							</span>
 						</span>
-						</a>
+							</a>
+						</div>
 					</div>
-				</div>
 
+				</div>
 			</div>
+
 		</div>
+
+
 
 	</div>
 </section>
 
-<section class="s-comments">
+<section class="s-comments" id="comments">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="section-title">
@@ -405,7 +413,7 @@
 	</div>
 </section>
 
-<section class="s-compare">
+<section class="s-compare" id="compare">
 	<div class="container">
 		<div class="row">
 
@@ -464,7 +472,7 @@
 	</div>
 </section>
 
-<section class="s-how">
+<section class="s-how" id="how">
 	<div class="container">
 		<div class="section-title">
 			Как мы работаем
@@ -521,7 +529,7 @@
 	</div>
 </section>
 
-<section class="s-quality">
+<section class="s-quality" id="quality">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="section-title">
@@ -566,7 +574,7 @@
 	</div>
 </section>
 
-<section class="s-customers">
+<section class="s-customers" id="customers">
 	<div class="container">
 		<div class="cust-brands">
 			<img src="img/brands.png" alt="alt" class="img-responsive">
@@ -587,6 +595,50 @@
 	</div>
 </section>
 
+<footer class="main-foot">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-2 col-sm-8">
+				<div class="section-title">
+					Остались вопросы?
+				</div>
+				<p>Получите бесплатную консультацию обувщика, заполнив форму ниже:</p>
+
+				<form class="contact-form footer-form">
+					<label for="name">
+						<input type="text" id="name" name="Имя" placeholder="Ваше имя" autocomplete="off">
+					</label>
+
+					<label for="phone">
+						<input type="text" id="phone" name="Телефон" placeholder="Ваш телефон" autocomplete="off" class="user-phone" data-validation="custom" data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" data-validation-error-msg="* Укажите ваш телефон">
+						<span id="phone-error-dialog"></span>
+					</label>
+
+					<label for="email">
+						<input type="text" data-validation-error-msg="* Укажите корректный email" data-validation="email" id="email" name="Email" placeholder="Ваш email" autocomplete="off">
+					</label>
+
+					<button type="submit" class="btn">Оставить заявку</button>
+				</form>
+
+				<div class="section-title">
+					Свяжитесь с нами
+				</div>
+				<div class="contacts">
+					<p>г. Москва</p>
+					<p>ул. Новокузнецкая д. 26/8 строение 3</p>
+					<p>recaromaster@yandex.ru</p>
+					<p>+7 (499) 705-48-43</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<div id="toTop"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
 
 
 

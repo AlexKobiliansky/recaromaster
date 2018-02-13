@@ -76,6 +76,8 @@ input, a
   border: none
   outline: none
   +mt(.3s)
+  &:hover
+    background-color: darken($accent-color, 5%)
 
 section
   padding: 40px 0
@@ -93,3 +95,51 @@ section
     background-color: $accent-color
     position: absolute
     bottom: -30px
+
+.contact-form
+  label
+    position: relative
+  input[type="text"]
+    width: 100%
+    font-size: 18px
+    font-family: "robotoRegular", sans-serif
+    padding: 30px
+    border: 2px solid #fff
+    border-radius: 60px
+    background: transparent
+    &::placeholder
+      color: #fff
+  .form-error
+    position: absolute
+    left: 0
+    padding-left: 30px
+    padding-top: 12px
+    color: rgb(185, 74, 72)
+    font-size: 13px
+    font-family: "robotoRegular", sans-serif
+
+.has-error
+  input[type="text"]
+    &::placeholder
+      color: rgb(185, 74, 72)
+
+#toTop
+  z-index: 2000
+  width: 40px
+  height: 40px
+  background-color: black
+  opacity: .5
+  font-size: 30px
+  color: $accent-color
+  border-radius: 3px
+  cursor: pointer
+  +mt(.3s)
+  position: fixed
+  bottom: 15px
+  right: 15px
+  text-align: center
+  display: none
+  i
+    margin-top: 5px
+  &:hover
+    opacity: .8

@@ -30,11 +30,14 @@ gulp.task('js', ['common-js'], function() {
 		//'app/libs/jquery/dist/jquery.min.js',
         'app/libs/hammer/hammer.min.js',
         'app/libs/images-compare/jquery.images-compare.min.js',
+        'app/libs/scrollToId/jquery.malihu.PageScroll2id.min.js',
         'app/libs/matchheight/jquery.matchHeight-min.js',
         'app/libs/magnificPopup/jquery.magnific-popup.min.js',
 		'app/libs/equalheights/jquery.equalheights.min.js',
 		'app/libs/owlCarousel/owl.carousel.min.js',
 		'app/libs/owlCarousel/owl.carousel2.thumbs.min.js',
+		'app/libs/inputmask/jquery.maskedinput.min.js',
+		'app/libs/jquery-form-validator/form-validator/jquery.form-validator.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js')) // минимизируем и соединяем в один файл
